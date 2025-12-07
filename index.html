@@ -2,63 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Q4 Earnings Report – Interactive Deck</title>
+
+    <!-- ✅ Put email in title -->
+    <title>Q4 Earnings Report – 24f1000008@ds.study.iitm.ac.in</title>
+
+    <!-- ✅ Put email in meta tag -->
+    <meta name="author" content="24f1000008@ds.study.iitm.ac.in">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
   </head>
   <body>
-     <div>24f1000008@ds.study.iitm.ac.in</div>
+
+    <!-- ✅ Plain text email, outside slides -->
+    <p>Contact: 24f1000008@ds.study.iitm.ac.in</p>
+
     <div class="reveal">
       <div class="slides">
 
-        <!-- Intro Slide -->
+        <!-- ✅ First slide clearly shows email -->
         <section>
-  <h2>Q4 EARNINGS REPORT</h2>
+          <h2>Q4 EARNINGS REPORT</h2>
+          <p><strong>Email:</strong> 24f1000008@ds.study.iitm.ac.in</p>
 
-  <!-- ✅ Simple, plain paragraph with your exact email -->
-  <p>Email: 24f1000008@ds.study.iitm.ac.in</p>
+          <p class="fragment">Technical Consultant – Major Financial Institution</p>
+          <p class="fragment">Interactive RevealJS Presentation</p>
 
-  <p class="fragment">Technical Consultant – Major Financial Institution</p>
-  <p class="fragment">Interactive RevealJS Presentation</p>
+          <aside class="notes">
+            Introduce yourself and your email for follow-up questions.
+          </aside>
+        </section>
 
-  <aside class="notes">
-    Introduce yourself and explicitly mention that this email is your contact
-    for follow-up questions about the earnings report.
-  </aside>
-</section>
+        <!-- Markdown slide -->
+        <section data-markdown="slides.md"></section>
 
-
+        <!-- Code slide -->
+        <section>
+          <h3>Code Sample</h3>
 <pre><code class="language-python">
-// Example: Year-over-year earnings growth
 def yoy_growth(current, previous):
     return (current - previous) / previous
 
 print(f"YoY Growth: {yoy_growth(1250000000, 1100000000):.2%}")
 </code></pre>
-
           <aside class="notes">
-            Explain the calculation and reporting.
+            Explain the YoY growth calculation.
           </aside>
         </section>
 
-        <!-- Math Slide -->
+        <!-- Math slide -->
         <section>
+          <h3>Key Metrics</h3>
           <p class="fragment">
-            \\[
-              ROE = \frac{Net\,Income}{Shareholders'\,Equity}
-            \\]
+            \[
+              ROE = \frac{\text{Net Income}}{\text{Shareholders' Equity}}
+            \]
           </p>
-
           <p class="fragment">
-            \\[
-              EPS = \frac{Net\,Income - Preferred\,Dividends}{Shares}
-            \\]
+            \[
+              EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Shares}}
+            \]
           </p>
-
           <aside class="notes">
-            Discuss how these influence performance.
+            Discuss ROE and EPS impact.
           </aside>
         </section>
 
@@ -73,6 +80,8 @@ print(f"YoY Growth: {yoy_growth(1250000000, 1100000000):.2%}")
 
     <script>
       Reveal.initialize({
+        hash: true,
+        slideNumber: true,
         plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes]
       });
     </script>
